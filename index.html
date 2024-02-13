@@ -10,6 +10,31 @@
 </head>
 
 <body>
+  <!-- Scripts -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
   <nav id="header">
     <!-- Nav-bar -->
     <input id="menu-toggle" type="checkbox" />
@@ -122,31 +147,6 @@
 
     <p> </br>@Haylou All rights reserved </p>    
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  
-  <script>
-    const swiper = new Swiper('.swiper', {
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-    
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 </body>
 
 </html>
